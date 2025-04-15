@@ -101,3 +101,137 @@ _ Operadores Ariméticos
 Nos quedamos en el tiempo de: 50:04
 
 */
+
+
+
+
+/* Operadores de asignación: Asigna un valor al operando de la izquierda basado en el valor del operando de la derecha
+
+Nombres                                            Abreviaciones          Significado 
+
+Asignación                                            x = y                  x = y
+
+Asignación de adicción                                x += y                 x = x + y
+
+Asignación de sustracción                             x -= y                 x = x - y
+
+Asignación de multiplicación                          x *= y                 x = x * y
+
+Asignación de división                                x /= y                 x = x / y
+
+Asignación de Resto                                   x %= y                 x = x % y
+
+Asignación de exponenciación                          x **= y                x = x ** y 
+
+Asignación de desplazamiento a la izquierda           x <<= y                x = x << y
+
+Asignación de desplazamiento a la derecha             x >>= y                x = x >> y
+
+Asignación sin signo de desplazamiento de la drecha   x >>>= y               x = x >>> y
+
+Asignación AND                                        x &= y                 x = x & y
+
+Asignación XOR                                        x ^= y                 x = x ^ y
+
+Asignación OR                                         x |= y                 x = x | y
+
+
+*/
+
+//Ejemplo : x += y :
+
+
+let numero_a = 10; 
+
+/* Operación */  numero_a += 5;
+
+document.write(numero_a);
+
+//es lo mismo que escribir esto:
+
+let operacion = numero_a + 5;
+
+document.write(operacion);
+
+//---------------------------//
+
+//Ejemplo : x -= y 
+
+let numero_b = 10; 
+
+/* Operación */  numero_b -= 5;
+
+document.write(numero_b);
+
+//es lo mismo que escribir esto:
+
+let operacion_b = numero_b - 5;
+
+document.write(operacion_b);
+
+
+//---------------------------//
+
+//Ejemplo : x *= y 
+
+let numero_c = 10; 
+
+/* Operación */  numero_c *= 5;
+
+document.write(numero_c);
+
+//es lo mismo que escribir esto:
+
+let operacion_c = numero_c * 5;
+
+document.write(operacion_c);
+
+//---------------------------//
+
+
+//Ejemplo : x /= y 
+
+let numero_d = 10; 
+
+/* Operación */  numero_d /= 5;
+
+document.write(numero_d);
+
+//es lo mismo que escribir esto:
+
+let operacion_d = numero_d / 5;
+
+document.write(operacion_d);
+
+
+
+
+
+/*Operadores Ariméticos que toman valores numéricos
+
+Adición          +
+Decremento       --
+División         /
+Potencia         **
+Incremento       ++
+Multiplicacion   *
+porcentaje       %
+resta            -
+negación         -
+plus             +
+
+
+*/
+
+
+//Ejemplo de implementación:
+
+let suma = 5 + 4;
+
+let decremento = 10;
+decremento--;
+
+alert(decremento)
+
+
+//nos quedamos en 1:00:42 división
