@@ -85,7 +85,33 @@ console.log(suma)
 const nombre2 = 'Laura'; 
 const apellido_paterno2 = 'Guerra';
 
-var concatenar = nombre2 + apellido_paterno2
+var concatenar = nombre2 + apellido_paterno2;   //No es recomendable si son letras 
+
+console.log(concatenar);
+
+//concatenar con concat
+ 
+var concocatenar_concat = nombre2.concat(apellido_paterno2); // Esto si es recomendable porque es letra
+
+alert(concocatenar_concat);
+//otra forma de concatenar pero más de dos variables
+
+//para eso vamos usar backticks ==> ``   ctrl + alt + }
+
+
+frase1 = "Yo soy";
+frase2 = "el mejor programador"; 
+
+var concatenacion = `<div><h1>${frase1}</h1><br><h3>${frase2}</h3></div>`;
+
+document.write(concatenacion);
+
+//concatenación estatica monolitica --> no recomendable
+
+frase = "Yo soy `Hans` y soy un Ingeniero en Sistemas";
+
+console.log(frase);
+
 
 //si quieres una notificacion que solicita un dato es así
 
@@ -234,4 +260,19 @@ decremento--;
 alert(decremento)
 
 
-//nos quedamos en 1:00:42 división
+/* Comparadores lógicos 
+
+
+Equality (a == b) igualdad
+inequality (a != b) desigualdad 
+identity (a ===  b) identico
+Non-identity (a !== b) no identico  
+Greater than (a > b) mayor a que
+Greater than or equal (a >= b) 
+Less than (a < b) menor a que
+Less than or equal (a <= b) menor igual
+
+
+nos quedamos en 1:16:12
+
+*/
