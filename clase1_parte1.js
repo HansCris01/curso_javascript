@@ -400,13 +400,43 @@ if (edad >= 18) {
 
 //1:42:42  --> continuar cuando termina el if
 
+let usuario = "hans@outlook.es";
+let password = "hakdhaujkol74";
 
+if (usuario === "root@outlook.es" && password === "hjkasujh786"){
+   console.log("credenciales correctas");
+} else {
+   console.log("credenciales incorrectas");
+}
 
+/* Ejercicio con IF
+    */
 
+dineroJose = prompt("¿Cuanto dinero tienes José?");	
+	
+if ( dineroJose >= 0.6 && dineroJose < 1){
+	alert("Compra el helado de hielo de lucuma");
+	alert("Tu vuelto" + (parseFloat(dineroJose) - 0.6).toFixed(2));
+} else if (dineroJose >= 1 && dineroJose < 1.6){
+	alert("Compra el helado de crema");
+	alert("Tu vuelto" + (parseFloat(dineroJose) - 1).toFixed(2));
+} else if (dineroJose >= 1.6 && dineroJose < 1.7){	
+	alert("Compra el helado de chispita");
+	alert("Tu vuelto" + (parseFloat(dineroJose) - 1.6).toFixed(2));
+} else if (dineroJose >= 1.7 && dineroJose < 1.8){	
+	alert("Compra el helado de fresa");
+	alert("Tu vuelto" + (parseFloat(dineroJose) - 0.7).toFixed(2));
+} else if (dineroJose >= 1.8 && dineroJose < 2.9){	
+	alert("Compra el helado de maracuyá");	
+	alert("Tu vuelto" + (parseFloat(dineroJose) - 1.8).toFixed(2));
+} else if (dineroJose >= 2.9){	
+	alert("Compra el pote de helado de 1/4kg");
+    alert("Tu vuelto" + (parseFloat(dineroJose) - 2.9).toFixed(2));	
+} else {
+	alert("Lo siento no te alcanza para un helado");	
+}	
 
-
-
-
+//Continuar 2:00:18
 
 
 
