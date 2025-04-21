@@ -366,7 +366,45 @@ document.write(resultado2);
 document.write(resultado3);
 
 
-//continuar 1:30:29
+/*camel case significa que al declarar variable empieza 
+con minuscula y al medio lleva una palabra mayuscula 
+o tambien métodos
+*/
+
+//ejemplo 1
+
+primerNumero = 23;
+
+//ejemplo 2
+
+//parseInt()
+
+/*  
+ Condicionales 
+ 
+ If
+ else if
+ Else
+*/
+
+let edad = "ddd";
+
+if (edad >= 18) {
+	alert("Usted es mayor de edad");
+} else if (edad < 18){
+	alert("Usted es menor de edad");
+} else {
+	alert("No es un número entero");
+}
+
+
+//1:42:42  --> continuar cuando termina el if
+
+
+
+
+
+
 
 
 
