@@ -438,6 +438,51 @@ if ( dineroJose >= 0.6 && dineroJose < 1){
 
 //Continuar 2:00:18
 
+//Arrays 
+
+//elemento  0          1         2        3
+arrays = ["banana", "manzana", "uvas", "fresa"];
+
+console.log(arrays[0]); //mostar por elemento seleccionado por posicion
+console.log(arrays); //muestra todos los elementos
+
+//Array Asociativos --> otra forma de trabajar clave y valor
+
+let pc = {
+	nombre: "Computadora",
+	procesador: "AMD Ryzen 5",
+	ram: "64GB",
+	almacenamiento: "2TB"
+}
+
+console.log(pc); //muestra todos
+console.log(pc["nombre"]); //muestra la clave nombre
+
+let nombre = pc["nombre"];
+let procesador = pc["procesador"];
+let ram = pc["ram"];
+let almacenamiento = pc["almacenamiento"];
+
+frase = `el nombre de mi Pc es: ${nombre}`;
+
+console.log(frase);
+
+/*Nos quedamos en 2:23:31 Bucles e Iteración
+
+ _ Definicion y usos
+ 
+ _ sentencia while
+ _ sentencia do while
+ _ sentencia for
+ _ sentencia for in 
+ _ sentencia for of
+ 
+*/
+
+
+
+
+
 
 
 
