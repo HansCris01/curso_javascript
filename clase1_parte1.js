@@ -477,7 +477,113 @@ console.log(frase);
  _ sentencia for in 
  _ sentencia for of
  
+ _ sentencia break
+ _ sentencia label
+ _ sentencia continue
+ 
 */
+
+/*
+Diferencia de IF con el While
+
+if 2 > 1                                  while 2 > 1
+
+alert("Verdadero") --> no se da blucle    alert("verdadero")  --> se da en bucle
+                                                               repitiendo lo mismo
+*/
+
+//Ejemplo:
+
+let numero = 0;
+
+if (numero < 10){ //si es verdadero
+    numero++;   //--> no se da blucle, porque se ejecuta 1 vez
+    console.log(numero);
+}
+
+
+let numero = 0;
+
+while (numero < 10){ //hasta que no deje de ser verdadero no va parar
+    console.log(numero); // -> se da en bucle repitiendo lo mismo hasta colgar la computadora                                                                   
+}
+
+//con esto quitamos el bucle infinito
+let numero = 0;
+
+while (numero < 10){ //hasta que no deje de ser verdadero no va parar
+	numero++; //--> con esto logramos que solo llegue hasta 10
+	          //ya que va sumar 1 vuelve a preguntar sera 2 hasta llegar a 10 y es donde va parar
+    console.log(numero);                                                               
+}
+
+//Otra forma de usar el While
+
+do {  //primero ejecuto 1 vez, pero si es verdadera vuelve ejecutar
+	numero++;
+	console.log(numero); 
+} while (numero < 10) //Despues pregunta si es verdadero
+
+//sentencia break
+
+while (numero < 100){ //hasta que no deje de ser verdadero no va parar
+	numero++; //--> con esto logramos que solo llegue hasta 100
+	          //ya que va sumar 1 vuelve a preguntar sera 2 hasta llegar a 100 y es donde va parar
+    console.log(numero); 
+    if (numero == 10){ //cuando encuentre el numero 10 va romper el bucle con break
+		break; //break rompe el bucle
+	}	
+}
+
+//ejemplo de FOR in, aquí le decimos hasta donde va ejecutar 
+
+for (let i = 0; i < 10; i++){
+	console.log(i);
+}
+
+
+//for bucle tradicional
+
+let frutas = ["platano", "uva", "fresa"];
+
+for (let i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+
+//Usando for...of (más moderno y fácil de leer)
+
+let frutas = ["platano", "uva", "fresa"];
+
+for (let fruta of frutas) {
+  console.log(fruta);
+}
+
+// Usando .forEach() (funcional) --> este es lo último y más moderno para desarrollo
+
+let frutas = ["platano", "uva", "fresa"];
+
+frutas.forEach(function(fruta) {
+  console.log(fruta);
+});
+
+//for con continue
+
+for (let i = 0; i < 10; i++){
+	if (i == 12){
+		continue; //cuando encuentra el numero 12 continua
+	}
+	console.log(i);
+}
+
+//nos quedamos en 2:48:34
+
+
+
+
+
+
+
+
 
 
 
