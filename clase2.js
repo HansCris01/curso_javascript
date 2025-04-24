@@ -32,7 +32,8 @@ for (let array in array2){
 	if(array == 2){
 
 		for (let array of array1){
-			break forAlumnos;
+			break forAlumnos; //me permite parar el bucle en el for general
+                        //break; //cierra hasta el array 2
 			document.write(array + "<br>");
 		}
 
@@ -40,7 +41,6 @@ for (let array in array2){
 		document.write(array2[array] + "<br>");
 	}
 }
-
 
 
 
