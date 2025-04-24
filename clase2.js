@@ -4,7 +4,7 @@
 
 let animales = ["gato", "perro", "tiranosaurio ex"];
 
-for (animal of animales){
+for (animal in animales){
 	console.log(animal);
 }
 

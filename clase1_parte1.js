@@ -240,7 +240,7 @@ Decremento       --
 División         /
 Potencia         **
 Incremento       ++
-Multiplicacion   *
+Multiplicación   *
 porcentaje       %
 resta            -
 negación         -
@@ -265,8 +265,8 @@ alert(decremento)
 
 Equality (a == b) igualdad
 inequality (a != b) desigualdad 
-identity (a ===  b) identico
-Non-identity (a !== b) no identico  
+identity (a ===  b) idéntico
+Non-identity (a !== b) no idéntico  
 Greater than (a > b) mayor a que
 Greater than or equal (a >= b) 
 Less than (a < b) menor a que
@@ -469,7 +469,7 @@ console.log(frase);
 
 /*Nos quedamos en 2:23:31 Bucles e Iteración
 
- _ Definicion y usos
+ _ Definición y usos
  
  _ sentencia while
  _ sentencia do while
