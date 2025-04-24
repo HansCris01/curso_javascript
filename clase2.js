@@ -22,6 +22,25 @@ for (planeta of planetas){
 }
 
 
+//label nos permite asociar ejemplo:
+
+array1 = ["María", "Josefa", "Roberta"];
+array2 = ["Pedro", "Marcela", array1, "Sara"];
+
+forAlumnos:
+for (let array in array2){
+	if(array == 2){
+
+		for (let array of array1){
+			break forAlumnos;
+			document.write(array + "<br>");
+		}
+
+	   }else{
+		document.write(array2[array] + "<br>");
+	}
+}
+
 
 
 
