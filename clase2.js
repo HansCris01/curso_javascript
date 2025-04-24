@@ -42,6 +42,21 @@ for (let array in array2){
 	}
 }
 
+/*Funciones
+   Definicion y usos
+   Formas de crear funciones (y llamarlas)
+   return
+   Scope
+   funciones flecha
+*/
+
+
+
+
+
+
+
+
 
 
 
