@@ -1,46 +1,3 @@
-//nos quedamos en 2:48:34
-
-//for con of
-
-let animales = ["gato", "perro", "tiranosaurio ex"];
-
-for (animal in animales){
-	console.log(animal);
-}
-
-//Diferencia entre un for in vs un for of
-
-let planetas = ["Tierra", "Mercurio", "Venus", "Marte"];
-planetas.nombre = "Planetas";
-
-for (planeta in planetas){
-	console.log(planeta); //te muestra las indexables hasta el nuevo que se agrego
-}
-
-for (planeta of planetas){
-	console.log(planeta); //te muestra la información pero no te muestra el nuevo que agregas que es planeta
-}
-
-
-//label nos permite asociar ejemplo: --> Falto mostrar eso
-
-array1 = ["María", "Josefa", "Roberta"];
-array2 = ["Pedro", "Marcela", array1, "Sara"];
-
-forAlumnos:
-for (let array in array2){
-	if(array == 2){
-
-		for (let array of array1){
-			break forAlumnos; //me permite parar el bucle en el for general
-                        //break; //cierra hasta el array 2
-			document.write(array + "<br>");
-		}
-
-	   }else{
-		document.write(array2[array] + "<br>");
-	}
-}
 
 /*Funciones
    Definicion y usos
@@ -273,14 +230,15 @@ const perro2 = new Perro("perro","blanco");
 perro2.setRaza = "Bomerman";
 document.write(perro2.getRaza);
 
-//Método cadena 5:13:05
+//--------Método cadena 5:13:05 ---------
 /*
 _ concat() --> junta a dos cadenas
 
 _ startsWith() --> Si una cadena comienza con los caracteres de otra cadena, devuelve true, si no devuelve false.
 _ endsWith() --> Si una cadena termina con los caracteres de otra cadena, devuelve true, sino devuelve false.
 _ includes() --> Si una cadena puede encontrarse dentro de otra cadena, devuelve true, si no devuelve false.
-_ indexOf() --> devuelve el indice del primer caracter de la cadena, si no existe, devuelve -1.
+_ indexOf() --> Devuelve el indice del primer caracter de la cadena, si no existe, devuelve -1.
+_ lastIndexOf() 
 
 _ padStart()[propuesta de Estandar] --> rellenar cadena al principio
 _ padEnd() [propuesta de ECMA] --> Rellenar cadena al final con los caracteres
@@ -293,6 +251,10 @@ _ toLowerCase() --> Convierte el texto a minúscula
 _ toUpperCase() --> Convierte el texto a mayúscula
 _ toString() --> método devuelve una cadena que representa el objeto especificado  
 _ trim() --> elimina los especios en el blanco al principio y al final de una cadena.
+_ TrimEnd()
+_ TrimStart()
+_ valueOf() 
+
 
 */
 
@@ -307,27 +269,88 @@ console.log(resultado);
 
 //nos quedamos en 5:15:58
 
+//ejemplo 2 con concat()
+
+let texto = "Hola ";
+let cadena = new String(texto);
+let cadena2 = "amigo como estas hoy?";
+
+resultado = cadena.concat(cadena2);
+
+console.log(resultado);
+
+//Ejemplo con startsWith() te permite validar
+//si la palabra esta en la otra cadena en la inicial
+//danto como resultado true o false
+
+let cadena = "cadena prueba";
+let cadena2 = "cadena";
+
+resultados = cadena.startsWith(cadena2);
+
+console.log(resultados);
+
+//Ejemplo con endsWith() si termina con la palabra 
+//de busqueda me dara true pero si la palabra final
+//es diferente dara false 
+
+let cadena = "cadena prueba";
+let cadena2 = "cadena";
+
+resultados = cadena.endsWith(cadena2);
+
+console.log(resultados);
+
+//ejemplo con includes() si incluye la palabra
+//dara verdadero
+
+let cadena = "cadena prueba";
+let cadena2 = "cadena";
+
+resultados = cadena.includes(cadena2);
+
+console.log(resultados);
+
+//ejemplo con indexOf() te dice en números cuantos 
+//indices recorrio para llegar a la palabra de busqueda
+
+let cadena = "cadena prueba";
+let cadena2 = "prueba";
+
+resultados = cadena.indexOf(cadena2);
+
+console.log(resultados);
+
+//Ejemplo con padStart te dice en números cuantos 
+//indices recorrio para llegar a las palabras iguales
+//en la busqueda
+
+let cadena = "cadena prueba prueba";
+let cadena2 = "prueba";
+
+resultados = cadena.lastIndexOf(cadena2);
+
+console.log(resultados);
+
+//Ejemplo con padStart()
 
 
+let cadena = "abc";
+
+resultados = cadena.padStart(6,"a");
+
+console.log(resultados);
+
+//ejemplo con padEnd()
+
+let cadena = "abc";
+
+resultados = cadena.padEnd(10,"1234");
+
+console.log(resultados);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Método array 5:42:48
 
 
 
